@@ -1,3 +1,18 @@
+class ContextManager:
+     def __init__(self):
+         print("initialized")
+
+     def __enter__(self):
+         print("entered!")
+
+     def __exit__(self, exc_type, exc_value, traceback):
+         print("exited!")
+
+cM = ContextManager()
+
+with cM:
+    pass
+
 with open('some_file', 'w') as opened_file:
     opened_file.write('Hola!')
 
