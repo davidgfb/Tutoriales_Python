@@ -5,7 +5,7 @@ class ContextManager:
      def __enter__(self):
          print("entered!")
 
-     def __exit__(self, exc_type, exc_value, traceback):
+     def __exit__(self, *args):
          print("exited!")
 
 cM = ContextManager()
