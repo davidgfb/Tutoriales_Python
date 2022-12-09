@@ -13,10 +13,10 @@ cM = ContextManager()
 with cM:
     pass
 
-with open('some_file', 'w') as opened_file:
+'''with open('some_file', 'w') as opened_file:
     opened_file.write('Hola!')
 
-'''context manager: https://book.pythontips.com/en/latest/context_managers.html
+context manager: https://book.pythontips.com/en/latest/context_managers.html
 el codigo de arriba es igual q:
 
 file = open('some_file', 'w')
